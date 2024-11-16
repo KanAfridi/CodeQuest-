@@ -2,7 +2,7 @@
 
 This is a simple console-based restaurant ordering system written in Python. The program allows customers to interact with a virtual waiter to place their orders, check prices, and calculate their total bill. It's a fun project to simulate real-world restaurant interactions.
 
-```
+
 ## How to Use
 1. Run the script in a Python environment.
 2. Follow the prompts to interact with the virtual waiter:
@@ -12,7 +12,9 @@ This is a simple console-based restaurant ordering system written in Python. The
    - Check your total bill.
 3. Exit the system by declining further orders.
 
+
 ## Example Interaction
+```
 Waiter: Hello sir! 
 You: Hello 
 Waiter: How are you, sir? 
