@@ -2,7 +2,7 @@
 
 This is a simple console-based restaurant ordering system written in Python. The program allows customers to interact with a virtual waiter to place their orders, check prices, and calculate their total bill. It's a fun project to simulate real-world restaurant interactions.
 
-
+```
 ## How to Use
 1. Run the script in a Python environment.
 2. Follow the prompts to interact with the virtual waiter:
@@ -29,3 +29,4 @@ Waiter: How many would you like?
 You: 2 
 Waiter: Your total for 2 pizza(s) is $20.00. 
 Waiter: Would you like to order anything else? Yes or No
+```
