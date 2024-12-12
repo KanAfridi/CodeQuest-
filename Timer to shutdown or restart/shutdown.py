@@ -60,13 +60,14 @@ while True:
                 if S_R_confirm == "s":
                     print("Your Pc will be shutdown in one minute or press crtl + c to end the operation")
                     countdown_timer(60)
-                    os.system("shutdown /s /t 0")
                     break  # Exit the while loop
-
+                elif S_R_confirm == 'r':
+                    print("Your Pc will be Restart in one minute or press crtl + c to end the operation")
+                    countdown_timer(60)
+                    break
                 else:
                     print("Your Pc will be Restart in one minute or press crtl + c to end the operation")
                     countdown_timer(60)
-                    os.system("shutdown /s /t 0")
                     break  # Exit the while loop
 
             else:
