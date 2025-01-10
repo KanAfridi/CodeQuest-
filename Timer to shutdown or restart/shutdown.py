@@ -43,12 +43,21 @@ while True:
                     continue
                 total_second = askformin * 60
 
+
             else:
                 print("Invalid input for timer.")
                 continue
 
-            print(f"Starting countdown...")
-            countdown_timer(total_second)  # Call countdown function
+            if S_R_confirm == "s":
+                print(f"Your pc will be shutdown within 👇...")
+                print(f"Starting countdown...")
+                countdown_timer(total_second)  # Call countdown function
+                os.system("shutdown /s /t 1")
+            else:
+                print(f"Your pc will be Restart within 👇...")
+                print(f"Starting countdown...")
+                countdown_timer(total_second)
+                os.system("shutdown /r /t 1")
 
         # This else will shutdown the pc within one min if the timer = no
         else:
@@ -60,15 +69,16 @@ while True:
                 if S_R_confirm == "s":
                     print("Your Pc will be shutdown in one minute or press crtl + c to end the operation")
                     countdown_timer(60)
+                    os.system("shutdown /s /t 1")
                     break  # Exit the while loop
                 elif S_R_confirm == 'r':
                     print("Your Pc will be Restart in one minute or press crtl + c to end the operation")
                     countdown_timer(60)
+                    os.system("shutdown /r /t 1")
                     break
                 else:
-                    print("Your Pc will be Restart in one minute or press crtl + c to end the operation")
-                    countdown_timer(60)
-                    break  # Exit the while loop
+                    print("Invalid input try again")
+                    continue
 
             else:
                 print("Action canceled. Exiting.")
